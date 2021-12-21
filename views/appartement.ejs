@@ -1,0 +1,13 @@
+<h1>liste des pièces de l'appartement</h1>
+<table>
+    <% for(let i=0;i<rooms.length;i++){%>
+    <tr>
+        <td>piece:<%= rooms[i].name %></td>
+        <td><%= rooms[i].length* rooms[i].width%>m2</td>
+    </tr> 
+    <%}%>
+</table>
+
+<form action="/retour" method="POST">
+    <input type="submit" name='retour' value='encoder une autre pièce'/><br/>
+</form>

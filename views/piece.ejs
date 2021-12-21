@@ -1,0 +1,11 @@
+<h1>Encode les données de la pièce</h1>
+<form action="/enregistrer" method="POST">
+    <label>pièce:   <input type="text" name='piece' value="<%=roomName%>" /></label><br/>
+    <label>largeur:  <input type="number" name='largeur' value="<%=largeur%>"/></label><br/>
+    <label>longueur: <input type="number" name='longueur' value="<%=longueur%>"/></label><br/>
+
+    <input type="submit" name='enregistrer' value='enregistrer'/><br/>
+
+    <input type="submit" name='surface' value='calculer la surface' formaction="/consult"/>
+    <label><%=message%></label>
+</form>
